@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>JMM Montador</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      min-height: 100%;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+    }
+    .page {
+      position: relative;
+      width: min(100vw, 867px);
+      line-height: 0;
+      isolation: isolate;
+    }
+    .design {
+      display: block;
+      width: 100%;
+      height: auto;
+      user-select: none;
+      -webkit-user-drag: none;
+    }
+    .hotspot {
+      position: absolute;
+      display: block;
+      z-index: 2;
+      border-radius: 999px;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+      text-decoration: none;
+    }
+    /* Coordinates are percentages of the supplied 867 × 1536 design. */
+    .orcamento {
+      left: 14.1%;
+      top: 58.7%;
+      width: 71.8%;
+      height: 7.6%;
+    }
+    .ferramentas {
+      left: 14.1%;
+      top: 69.2%;
+      width: 71.8%;
+      height: 7.7%;
+    }
+    .moveis {
+      left: 14.1%;
+      top: 79.2%;
+      width: 71.8%;
+      height: 7.8%;
+    }
+    .parcerias {
+      left: 14.1%;
+      top: 89.0%;
+      width: 71.8%;
+      height: 7.6%;
+    }
+    @media (min-width: 868px) {
+      body { padding: 20px 0; }
+      .page { box-shadow: 0 0 40px rgba(255, 208, 0, .12); }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="JMM Montador">
+    <img class="design" src="design.jpeg" alt="JMM Montador — Montador de móveis | Orçamento gratuito">
+
+    <a class="hotspot orcamento"
+       href="https://wa.me/5591980247860?text=Ol%C3%A1%20JMM!%20Quero%20um%20or%C3%A7amento%20gr%C3%A1tis%20para%20montagem."
+       aria-label="Orçamento gratuito"></a>
+
+    <a class="hotspot ferramentas"
+       href="https://collshp.com/jmm_store/category/3805350?view=storefront"
+       aria-label="Ferramentas e EPIs"></a>
+
+    <a class="hotspot moveis"
+       href="https://collshp.com/jmm_store/category/4258535?view=storefront"
+       aria-label="Link móveis"></a>
+
+    <a class="hotspot parcerias"
+       href="mailto:jmmmontador@gmail.com?subject=Proposta%20de%20Parceria%20-%20JMM%20Montador&body=Ol%C3%A1%20JMM!%0A%0AMeu%20nome:%20%0AEmpresa%20/%20Loja:%20%0ATipo%20de%20parceria:%20%0A%0AMensagem:"
+       aria-label="Parcerias por e-mail"></a>
+  </main>
+</body>
+</html>
